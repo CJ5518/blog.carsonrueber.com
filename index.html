@@ -1,6 +1,19 @@
 ---
 title: Hello, World!
 layout: default
-shortTitle: Part 1
 ---
-<h1>{{ page.title }}____+++</h1>
+<h1>Hello there,</h1>
+<p>Welcome to the home page</p>
+{% include categories-nav.html%}
+
+<h1>Latest Posts</h1>
+
+
+
+<ul>
+  {% for post in site.posts %}
+	<li>
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	</li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,7 @@
+<nav id="sidebar">
+	{% for item in site.data.categories %}
+
+	<a href = cats/{{item[0]}}.html>{{item[0]}}</a>
+	<p>here{{item.name}} </p>
+	{% endfor %}
+</nav>

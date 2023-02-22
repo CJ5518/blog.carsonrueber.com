@@ -1,12 +1,15 @@
+---
+---
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-	<link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    {{ content }}
-	{% include navigation.html%}
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="shortcut icon" type="image/png" href="/images/favicons/{% if layout.favicon == null %}default.png{% else %}{{layout.favicon}}{% endif %}">
+	
+	</head>
+	<body>
+		{{content}}
+	</body>
 </html>

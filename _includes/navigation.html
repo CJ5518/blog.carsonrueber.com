@@ -1,7 +1,7 @@
-<nav>
+<nav id="sidebar">
 	{% for item in site.data.navigation %}
 	  <a href="{{ item.link }}" {% if page.url == item.link %}style="class: current-page;"{% endif %}>
 		{{ item.name }}
 	  </a>
 	{% endfor %}
-  </nav>
+</nav>
